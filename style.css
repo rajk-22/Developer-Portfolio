@@ -1,0 +1,165 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8f8f6;
+    color: #222;
+}
+
+header {
+    background: #20232a;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navbar h2 {
+    color: #f5a623;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #f5a623;
+}
+
+.hero {
+    min-height: 450px;
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+.hero-text h2 {
+    color: #d88c1e;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.hero-image img {
+    width: 260px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #d88c1e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section:not(.hero) {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 25px;
+}
+
+#about p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills-container div,
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.08);
+}
+
+.project-card {
+    max-width: 650px;
+    margin: 15px auto;
+    line-height: 1.8;
+}
+
+.project-card a {
+    color: #d88c1e;
+}
+
+footer {
+    background: #20232a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 230px;
+    }
+}
